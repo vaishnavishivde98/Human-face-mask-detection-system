@@ -1,0 +1,27 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Mask detection</title>
+<link href="./style.css" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"> </script>
+<script src="webcam.js"></script>
+</head>
+<body>
+
+	<h1> Mask Detection </h1>
+	<div>
+		<div>
+			<video autoplay playsinline muted id="wc" width="500" height="500" top=50%></video>
+		</div>
+	</div><br><br>
+	<div id="dummy">Click 'Start Predicting' to see predictions, and 'Stop Predicting' to end</div>
+	<br><br>
+	<button class="button" type="button" id="startPredicting" onclick="startPredicting()" >Start Predicting</button>
+	<button class="button" type="button" id="stopPredicting" onclick="stopPredicting()" >Stop Predicting</button>
+	<br><br><br>
+	<div id="prediction"></div>
+</body>
+
+<script src="index.js"></script>
+</html>
